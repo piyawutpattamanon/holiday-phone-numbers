@@ -1,10 +1,14 @@
-Test Problem #2 Phone Number Extractions
+Test Problem #2 Phone Number Extraction
+
+extract distinct phone numbers from HTML files
 
 Assumptions :
 - HTML files stored in one directory (and its sub directories) called "test-html"
-- each HTML file is small so that reading its content all into memory at one time is possible
--- its works faster (and take me less time to code) than code streaming
+- each HTML file is small so that reading its entire content into memory at one time is possible
+-- this way works faster (and take me less time to code) than to code streaming
 - the phone number formats we want to extract now are only 2 commonly used formats we see in online communities in Thailand, 08x xxx xxxx and 02 xxx xxxx without extensions and region code.
+- not use any HTML parser at this time though.
+- currently not use distributed programming or any native language to boost the performance further, balancing between time-to-code and performance
 
 To Run :
 ruby main.rb
